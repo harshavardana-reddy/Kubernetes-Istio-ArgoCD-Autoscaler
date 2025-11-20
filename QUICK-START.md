@@ -80,7 +80,7 @@ kubectl get gateway -n microservices
 kubectl logs -f deployment/autoscaler -n microservices
 
 # Test service access
-kubectl port-forward -n istio-system svc/istio-ingressgateway 8080:80
+kubectl port-forward -n istio-system svc/istio-ingressgateway 8081:80
 curl http://localhost:8080/api/admin/health
 ```
 

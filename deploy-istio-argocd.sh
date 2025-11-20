@@ -110,13 +110,13 @@ else
     echo "  kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml"
 fi
 
-# Step 10: Wait for pods to be ready
-echo -e "\n${YELLOW}Step 10: Waiting for pods to be ready...${NC}"
-kubectl wait --for=condition=ready pod -l app=admin-service -n microservices --timeout=120s || true
-kubectl wait --for=condition=ready pod -l app=faculty-service -n microservices --timeout=120s || true
-kubectl wait --for=condition=ready pod -l app=student-service -n microservices --timeout=120s || true
-kubectl wait --for=condition=ready pod -l app=api-gateway -n microservices --timeout=120s || true
-kubectl wait --for=condition=ready pod -l app=autoscaler -n microservices --timeout=120s || true
+# # Step 10: Wait for pods to be ready
+# echo -e "\n${YELLOW}Step 10: Waiting for pods to be ready...${NC}"
+# kubectl wait --for=condition=ready pod -l app=admin-service -n microservices --timeout=120s || true
+# kubectl wait --for=condition=ready pod -l app=faculty-service -n microservices --timeout=120s || true
+# kubectl wait --for=condition=ready pod -l app=student-service -n microservices --timeout=120s || true
+# kubectl wait --for=condition=ready pod -l app=api-gateway -n microservices --timeout=120s || true
+# kubectl wait --for=condition=ready pod -l app=autoscaler -n microservices --timeout=120s || true
 
 echo -e "\n${GREEN}=========================================="
 echo "Deployment Complete!"

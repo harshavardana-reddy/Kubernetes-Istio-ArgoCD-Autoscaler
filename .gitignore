@@ -7,3 +7,8 @@ __pycache__/
 FACULTY_SERVICE/
 EUREKHA_SERVER/
 API_GATEWAY/
+istio-1.22.0/
+istio.zip
+password.txt
+kubectl
+downloadIstio.ps1

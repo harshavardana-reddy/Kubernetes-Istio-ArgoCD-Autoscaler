@@ -1,0 +1,9 @@
+.venv/
+frontend/
+ADMIN_SERVICE/
+STUDENT_SERVICE/
+__pycache__/
+*.pyc
+FACULTY_SERVICE/
+EUREKHA_SERVER/
+API_GATEWAY/
